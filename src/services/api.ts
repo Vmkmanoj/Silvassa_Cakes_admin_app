@@ -1,6 +1,7 @@
-import {type Product,type ProductFormData } from '../types/product';
+import { type Product, type ProductFormData } from '../types/product';
 
-export const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8001';
+export const API_BASE_URL = import.meta.env.VITE_API_URL
+// || 'http://localhost:8001';
 
 export const productApi = {
   // Fetch all products with optional filters

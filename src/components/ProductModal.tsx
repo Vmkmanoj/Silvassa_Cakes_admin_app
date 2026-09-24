@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {type Product,type ProductFormData } from '../types/product';
+import { type Product, type ProductFormData } from '../types/product';
 import { X, Sparkles, AlertTriangle } from './Icons';
 
 interface ProductModalProps {
@@ -12,6 +12,7 @@ interface ProductModalProps {
 
 const PRESET_IMAGES = [
   { name: 'Grilled Beef Steak', url: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=600&auto=format&fit=crop&q=80', type: 'Steak' },
+  { name: 'Fudge brownie', url: 'https://xflimgtaigacmtrfxkbx.supabase.co/storage/v1/object/public/ProductImages/Gemini_Generated_Image_20yc2120yc2120yc-removebg-preview.png', type: 'snack' },
   { name: 'Duck Noodles', url: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=600&auto=format&fit=crop&q=80', type: 'Noodles' },
   { name: 'Spaghetti Carbonara', url: 'https://images.unsplash.com/photo-1612874742237-6526221588e3?w=600&auto=format&fit=crop&q=80', type: 'Pasta' },
   { name: 'Grilled Chicken Salad', url: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&auto=format&fit=crop&q=80', type: 'Salad' },
@@ -21,7 +22,7 @@ const PRESET_IMAGES = [
   { name: 'Strawberries Dessert', url: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&auto=format&fit=crop&q=80', type: 'Dessert' },
 ];
 
-const PRESET_TYPES = ['Main Course', 'Steak', 'Noodles', 'Pasta', 'Salad', 'Chicken', 'Seafood', 'Dessert', 'Beverage', 'Breakfast'];
+const PRESET_TYPES = ['Main Course', 'Steak', 'Noodles', 'Pasta', 'Salad', 'Chicken', 'Seafood', 'Dessert', 'Beverage', 'Breakfast',];
 
 export const ProductModal: React.FC<ProductModalProps> = ({
   isOpen,

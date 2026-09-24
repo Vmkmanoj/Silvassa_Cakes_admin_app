@@ -19,11 +19,11 @@ export const Navbar: React.FC<NavbarProps> = ({
       <div className="navbar-left">
         <div className="navbar-brand">
           <div className="brand-logo">
-            <UtensilsCrossed size={22} className="text-orange-400" />
+            <UtensilsCrossed size={22} color="#ffffff" />
           </div>
           <div>
             <div className="brand-title">
-              Yum-Tum <span className="brand-tag">Admin</span>
+               <span className="brand-tag">Admin</span>
             </div>
             <div className="brand-sub">Menu & Product Management Portal</div>
           </div>
